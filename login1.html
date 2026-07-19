@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+
+    <style>
+        body{
+            margin:0;
+            font-family:Arial, sans-serif;
+            background:linear-gradient(135deg,#4facfe,#6a11cb);
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+        }
+
+        .login-box{
+            width:380px;
+            background:#ffffff;
+            border-radius:15px;
+            overflow:hidden;
+            box-shadow:0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .header{
+            background:#6a11cb;
+            color:white;
+            text-align:center;
+            padding:20px;
+            font-size:28px;
+            font-weight:bold;
+        }
+
+        .content{
+            padding:30px;
+        }
+
+        table{
+            width:100%;
+        }
+
+        td{
+            padding:12px;
+        }
+
+        label{
+            font-weight:bold;
+            color:#333;
+        }
+
+        input[type=text],
+        input[type=password]{
+            width:100%;
+            padding:10px;
+            border:1px solid #ccc;
+            border-radius:8px;
+            font-size:15px;
+        }
+
+        input:focus{
+            border-color:#6a11cb;
+            outline:none;
+            box-shadow:0 0 8px #b18cff;
+        }
+
+        .buttons{
+            text-align:center;
+            padding-top:20px;
+        }
+
+        .submit{
+            background:#28a745;
+            color:white;
+            border:none;
+            padding:10px 22px;
+            border-radius:8px;
+            font-size:15px;
+            cursor:pointer;
+        }
+
+        .reset{
+            background:#dc3545;
+            color:white;
+            border:none;
+            padding:10px 22px;
+            border-radius:8px;
+            font-size:15px;
+            cursor:pointer;
+            margin-left:10px;
+        }
+
+        .submit:hover{
+            background:#218838;
+        }
+
+        .reset:hover{
+            background:#c82333;
+        }
+
+        .footer{
+            text-align:center;
+            color:#777;
+            font-size:13px;
+            margin-top:15px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div class="login-box">
+
+    <div class="header">
+        🔐 LOGIN PAGE
+    </div>
+
+    <div class="content">
+
+        <form>
+
+            <table>
+
+                <tr>
+                    <td><label>👤 User Name</label></td>
+                    <td><input type="text" placeholder="Enter User Name" required></td>
+                </tr>
+
+                <tr>
+                    <td><label>🔑 Password</label></td>
+                    <td><input type="password" placeholder="Enter Password" required></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" class="buttons">
+                        <input type="submit" value="Submit" class="submit">
+                        <input type="reset" value="Reset" class="reset">
+                    </td>
+                </tr>
+
+            </table>
+
+        </form>
+
+        <div class="footer">
+            Welcome! Please enter your credentials.
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
